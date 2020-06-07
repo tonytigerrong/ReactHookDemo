@@ -13,7 +13,12 @@ function HookClassMouse() {
     useEffect( ()=>{
         console.log('useEffect called')
         window.addEventListener('mousemove', logMousePosition);
-    },[] )
+        // add a return function, the function will be called when unmount component itself
+        return ()=>{
+            console.log('unmout useEffect')
+            window.removeEventListener('mousemove', logMousePosition)
+        }
+    },[] ) // the empty array [] means, the useEffect will only be called once
 
     return (
         <div>
