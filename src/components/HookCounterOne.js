@@ -7,7 +7,7 @@ function HookCounterOne() {
     useEffect(()=>{
         console.log("useEffect - update title")
         document.title = `You clicked ${count} time`;
-    },[count]);
+    },[count,name]);
     return (
         <div>
             <input type="text" onChange={
