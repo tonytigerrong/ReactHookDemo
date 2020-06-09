@@ -14,6 +14,11 @@ import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFecthing from './components/DataFecthing';
 import DataFecthing2 from './components/DataFecthing2';
+import ComponentC from './components/ComponentC';
+
+
+export const FNameContext = React.createContext();
+export const LNameContext = React.createContext()
 
 function App() {
   return (
@@ -33,6 +38,15 @@ function App() {
       Rest Fetch:
       <DataFecthing />
       <DataFecthing2 />
+      UseContext:
+      <FNameContext.Provider value={'tony'}>
+        <LNameContext.Provider value={'rong'}>
+          <ComponentC />
+        </LNameContext.Provider>
+      
+      </FNameContext.Provider>
+      
+
     </div>
   );
 }
