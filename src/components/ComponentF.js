@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useContext } from 'react'
 import {FNameContext,LNameContext} from '../App'
 export default function ComponentF() {
+    const fname = useContext(FNameContext);
+    const lname = useContext(LNameContext);
     return (
         <div>
             <FNameContext.Consumer>
@@ -19,6 +21,7 @@ export default function ComponentF() {
                     }
                 }
             </FNameContext.Consumer>
+            {fname},{lname}
         </div>
     )
 }
