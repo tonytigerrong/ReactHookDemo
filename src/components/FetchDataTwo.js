@@ -1,5 +1,13 @@
 import React,{useState, useEffect, useReducer} from 'react'
 import axios from 'axios'
+/**
+ * useReducer vs useState
+ * useReducer fit for states like object or array, complex relate, gloable 
+ * useState fit for states like string/number/boolean, simple, local 
+ * 
+ */
+
+
 const reducer = (state, action)=>{
     switch(action.type){
         case 'success':
