@@ -25,6 +25,8 @@ export default function CountOne() {
         }
     }
     const [count, dispatch] = useReducer(reducer, initialState)
+    
+
     return (
         <div>
             Count.firstCount-{count.firstCount} - Count.secondCount-{count.secondCount}

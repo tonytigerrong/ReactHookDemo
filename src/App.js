@@ -16,6 +16,7 @@ import DataFecthing from './components/DataFecthing';
 import DataFecthing2 from './components/DataFecthing2';
 import ComponentC from './components/ComponentC';
 import CountOne from './components/CountOne';
+import CountTwo from './components/CountTwo';
 
 
 export const FNameContext = React.createContext();
@@ -48,6 +49,7 @@ function App() {
       </FNameContext.Provider>
       useReducer:
       <CountOne />
+      <CountTwo />
       
 
     </div>
