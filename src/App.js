@@ -15,6 +15,7 @@ import IntervalHookCounter from './components/IntervalHookCounter';
 import DataFecthing from './components/DataFecthing';
 import DataFecthing2 from './components/DataFecthing2';
 import ComponentC from './components/ComponentC';
+import CountOne from './components/CountOne';
 
 
 export const FNameContext = React.createContext();
@@ -45,6 +46,8 @@ function App() {
         </LNameContext.Provider>
       
       </FNameContext.Provider>
+      useReducer:
+      <CountOne />
       
 
     </div>
