@@ -21,7 +21,7 @@ import ComponentA from './components/ComponentA';
 import ComponentB from './components/ComponentB';
 import FetchDataOne from './components/FetchDataOne';
 import FetchDataTwo from './components/FetchDataTwo';
-
+import ParentComponent from './components/ParentComponent'
 export const FNameContext = React.createContext();
 export const LNameContext = React.createContext()
 
@@ -83,6 +83,8 @@ function App() {
     <FetchDataOne />
     Fetch Data Two:
     <FetchDataTwo />
+    useCallback:
+    <ParentComponent />
       
 
     </div>
