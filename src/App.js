@@ -19,6 +19,7 @@ import CountOne from './components/CountOne';
 import CountTwo from './components/CountTwo';
 import ComponentA from './components/ComponentA';
 import ComponentB from './components/ComponentB';
+import FetchDataOne from './components/FetchDataOne';
 
 export const FNameContext = React.createContext();
 export const LNameContext = React.createContext()
@@ -76,6 +77,9 @@ function App() {
       <ComponentB />
       <ComponentC />
    </CountContext.Provider>
+
+    Fetch Data:
+    <FetchDataOne />
       
       
 
