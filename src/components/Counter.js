@@ -8,4 +8,4 @@ import React from 'react'
         </div>
     )
 }
-export default Counter
+export default React.memo(Counter)
