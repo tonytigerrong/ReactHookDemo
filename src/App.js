@@ -20,6 +20,7 @@ import CountTwo from './components/CountTwo';
 import ComponentA from './components/ComponentA';
 import ComponentB from './components/ComponentB';
 import FetchDataOne from './components/FetchDataOne';
+import FetchDataTwo from './components/FetchDataTwo';
 
 export const FNameContext = React.createContext();
 export const LNameContext = React.createContext()
@@ -80,7 +81,8 @@ function App() {
 
     Fetch Data:
     <FetchDataOne />
-      
+    Fetch Data Two:
+    <FetchDataTwo />
       
 
     </div>
