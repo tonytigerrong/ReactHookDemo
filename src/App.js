@@ -30,6 +30,10 @@ import HookTimer from './components/HookTimer';
 import DocTitleOne from './components/DocTitleOne';
 import DocTitleTwo from './components/DocTitleTwo';
 
+import CounterOne from './components/CounterOne';
+import CounterTwo from './components/CounterTwo';
+import UserForm from './components/UserForm';
+
 export const FNameContext = React.createContext();
 export const LNameContext = React.createContext()
 
@@ -103,6 +107,11 @@ function App() {
     custom hook:
     <DocTitleOne />
     <DocTitleTwo />
+    custom hook 2:
+    <CounterOne />
+    <CounterTwo />
+    custom hook 3: form/input
+    <UserForm />
     </div>
   );
 }
