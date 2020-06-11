@@ -24,6 +24,9 @@ import FetchDataTwo from './components/FetchDataTwo';
 import ParentComponent from './components/ParentComponent'
 import CounterUseMemo from './components/CounterUseMemo'
 import FocusInput from './components/FocusInput';
+import ClassTimer from './components/ClassTimer';
+import HookTimer from './components/HookTimer';
+
 export const FNameContext = React.createContext();
 export const LNameContext = React.createContext()
 
@@ -91,6 +94,9 @@ function App() {
     <CounterUseMemo />
     useRef:1
     <FocusInput />
+    useRef:2
+    <ClassTimer />
+    <HookTimer />
     </div>
   );
 }
