@@ -23,6 +23,7 @@ import FetchDataOne from './components/FetchDataOne';
 import FetchDataTwo from './components/FetchDataTwo';
 import ParentComponent from './components/ParentComponent'
 import CounterUseMemo from './components/CounterUseMemo'
+import FocusInput from './components/FocusInput';
 export const FNameContext = React.createContext();
 export const LNameContext = React.createContext()
 
@@ -88,7 +89,8 @@ function App() {
     <ParentComponent />
     useMemo:
     <CounterUseMemo />
-
+    useRef:1
+    <FocusInput />
     </div>
   );
 }
