@@ -22,6 +22,7 @@ import ComponentB from './components/ComponentB';
 import FetchDataOne from './components/FetchDataOne';
 import FetchDataTwo from './components/FetchDataTwo';
 import ParentComponent from './components/ParentComponent'
+import CounterUseMemo from './components/CounterUseMemo'
 export const FNameContext = React.createContext();
 export const LNameContext = React.createContext()
 
@@ -85,7 +86,8 @@ function App() {
     <FetchDataTwo />
     useCallback:
     <ParentComponent />
-      
+    useMemo:
+    <CounterUseMemo />
 
     </div>
   );
