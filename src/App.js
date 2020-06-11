@@ -27,6 +27,9 @@ import FocusInput from './components/FocusInput';
 import ClassTimer from './components/ClassTimer';
 import HookTimer from './components/HookTimer';
 
+import DocTitleOne from './components/DocTitleOne';
+import DocTitleTwo from './components/DocTitleTwo';
+
 export const FNameContext = React.createContext();
 export const LNameContext = React.createContext()
 
@@ -97,6 +100,9 @@ function App() {
     useRef:2
     <ClassTimer />
     <HookTimer />
+    custom hook:
+    <DocTitleOne />
+    <DocTitleTwo />
     </div>
   );
 }
